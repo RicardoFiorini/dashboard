@@ -1,0 +1,482 @@
+[
+  {
+    "orderId": 1001,
+    "customer": {
+      "customerId": "CUST001",
+      "name": "Ana Silva",
+      "email": "ana.silva@example.com"
+    },
+    "date": "2025-09-30T14:48:00.000Z",
+    "totalAmount": 1349.98,
+    "status": "Completed",
+    "paymentMethod": "Credit Card",
+    "items": [
+      {
+        "productId": "PROD001",
+        "productName": "Smartphone X Pro",
+        "category": "Electronics",
+        "quantity": 1,
+        "unitPrice": 1299.99,
+        "totalPrice": 1299.99
+      },
+      {
+        "productId": "PROD005",
+        "productName": "Capa de Silicone para Smartphone",
+        "category": "Accessories",
+        "quantity": 1,
+        "unitPrice": 49.99,
+        "totalPrice": 49.99
+      }
+    ]
+  },
+  {
+    "orderId": 1002,
+    "customer": {
+      "customerId": "CUST002",
+      "name": "Bruno Costa",
+      "email": "bruno.costa@example.com"
+    },
+    "date": "2025-09-29T10:15:30.000Z",
+    "totalAmount": 89.90,
+    "status": "Shipped",
+    "paymentMethod": "Pix",
+    "items": [
+      {
+        "productId": "PROD010",
+        "productName": "Livro: A Arte da Programação",
+        "category": "Books",
+        "quantity": 1,
+        "unitPrice": 89.90,
+        "totalPrice": 89.90
+      }
+    ]
+  },
+  {
+    "orderId": 1003,
+    "customer": {
+      "customerId": "CUST003",
+      "name": "Carla Dias",
+      "email": "carla.dias@example.com"
+    },
+    "date": "2025-09-29T18:30:00.000Z",
+    "totalAmount": 259.90,
+    "status": "Processing",
+    "paymentMethod": "Boleto",
+    "items": [
+      {
+        "productId": "PROD003",
+        "productName": "Teclado Mecânico RGB",
+        "category": "Peripherals",
+        "quantity": 1,
+        "unitPrice": 259.90,
+        "totalPrice": 259.90
+      }
+    ]
+  },
+  {
+    "orderId": 1004,
+    "customer": {
+      "customerId": "CUST001",
+      "name": "Ana Silva",
+      "email": "ana.silva@example.com"
+    },
+    "date": "2025-09-28T09:05:10.000Z",
+    "totalAmount": 199.90,
+    "status": "Completed",
+    "paymentMethod": "Credit Card",
+    "items": [
+      {
+        "productId": "PROD007",
+        "productName": "Camiseta Geek 'Code'",
+        "category": "Clothing",
+        "quantity": 2,
+        "unitPrice": 99.95,
+        "totalPrice": 199.90
+      }
+    ]
+  },
+  {
+    "orderId": 1005,
+    "customer": {
+      "customerId": "CUST004",
+      "name": "Daniel Martins",
+      "email": "daniel.martins@example.com"
+    },
+    "date": "2025-09-27T22:00:00.000Z",
+    "totalAmount": 350.00,
+    "status": "Cancelled",
+    "paymentMethod": "PayPal",
+    "items": [
+      {
+        "productId": "PROD004",
+        "productName": "Mouse Gamer UltraLight",
+        "category": "Peripherals",
+        "quantity": 1,
+        "unitPrice": 350.00,
+        "totalPrice": 350.00
+      }
+    ]
+  },
+  {
+    "orderId": 1006,
+    "customer": {
+      "customerId": "CUST005",
+      "name": "Eduarda Lima",
+      "email": "eduarda.lima@example.com"
+    },
+    "date": "2025-09-26T11:45:00.000Z",
+    "totalAmount": 4598.99,
+    "status": "Completed",
+    "paymentMethod": "Credit Card",
+    "items": [
+      {
+        "productId": "PROD002",
+        "productName": "Notebook Pro Max",
+        "category": "Electronics",
+        "quantity": 1,
+        "unitPrice": 4598.99,
+        "totalPrice": 4598.99
+      }
+    ]
+  },
+  {
+    "orderId": 1007,
+    "customer": {
+      "customerId": "CUST002",
+      "name": "Bruno Costa",
+      "email": "bruno.costa@example.com"
+    },
+    "date": "2025-09-25T13:20:00.000Z",
+    "totalAmount": 129.90,
+    "status": "Completed",
+    "paymentMethod": "Pix",
+    "items": [
+      {
+        "productId": "PROD011",
+        "productName": "Livro: Clean Code",
+        "category": "Books",
+        "quantity": 1,
+        "unitPrice": 129.90,
+        "totalPrice": 129.90
+      }
+    ]
+  },
+  {
+    "orderId": 1008,
+    "customer": {
+      "customerId": "CUST006",
+      "name": "Fernanda Souza",
+      "email": "fernanda.souza@example.com"
+    },
+    "date": "2025-09-24T17:10:00.000Z",
+    "totalAmount": 79.90,
+    "status": "Shipped",
+    "paymentMethod": "Boleto",
+    "items": [
+      {
+        "productId": "PROD008",
+        "productName": "Caneca 'Hello World'",
+        "category": "Home",
+        "quantity": 1,
+        "unitPrice": 79.90,
+        "totalPrice": 79.90
+      }
+    ]
+  },
+  {
+    "orderId": 1009,
+    "customer": {
+      "customerId": "CUST007",
+      "name": "Gabriel Rocha",
+      "email": "gabriel.rocha@example.com"
+    },
+    "date": "2025-09-23T08:00:00.000Z",
+    "totalAmount": 899.90,
+    "status": "Completed",
+    "paymentMethod": "Credit Card",
+    "items": [
+      {
+        "productId": "PROD006",
+        "productName": "Monitor Gamer 24\" 144Hz",
+        "category": "Peripherals",
+        "quantity": 1,
+        "unitPrice": 899.90,
+        "totalPrice": 899.90
+      }
+    ]
+  },
+  {
+    "orderId": 1010,
+    "customer": {
+      "customerId": "CUST001",
+      "name": "Ana Silva",
+      "email": "ana.silva@example.com"
+    },
+    "date": "2025-09-22T21:30:00.000Z",
+    "totalAmount": 129.90,
+    "status": "Processing",
+    "paymentMethod": "PayPal",
+    "items": [
+      {
+        "productId": "PROD012",
+        "productName": "HQ: Saga do Infinito",
+        "category": "Books",
+        "quantity": 1,
+        "unitPrice": 129.90,
+        "totalPrice": 129.90
+      }
+    ]
+  },
+  {
+    "orderId": 1011,
+    "customer": {
+      "customerId": "CUST008",
+      "name": "Helena Costa",
+      "email": "helena.costa@example.com"
+    },
+    "date": "2025-08-28T16:22:00.000Z",
+    "totalAmount": 179.99,
+    "status": "Completed",
+    "paymentMethod": "Pix",
+    "items": [
+      {
+        "productId": "PROD009",
+        "productName": "Moletom com Capuz 'Developer'",
+        "category": "Clothing",
+        "quantity": 1,
+        "unitPrice": 179.99,
+        "totalPrice": 179.99
+      }
+    ]
+  },
+  {
+    "orderId": 1012,
+    "customer": {
+      "customerId": "CUST003",
+      "name": "Carla Dias",
+      "email": "carla.dias@example.com"
+    },
+    "date": "2025-08-25T12:00:00.000Z",
+    "totalAmount": 439.98,
+    "status": "Completed",
+    "paymentMethod": "Credit Card",
+    "items": [
+      {
+        "productId": "PROD004",
+        "productName": "Mouse Gamer UltraLight",
+        "category": "Peripherals",
+        "quantity": 1,
+        "unitPrice": 350.00,
+        "totalPrice": 350.00
+      },
+      {
+        "productId": "PROD013",
+        "productName": "Mousepad Gamer XXL",
+        "category": "Accessories",
+        "quantity": 1,
+        "unitPrice": 89.98,
+        "totalPrice": 89.98
+      }
+    ]
+  },
+  {
+    "orderId": 1013,
+    "customer": {
+      "customerId": "CUST009",
+      "name": "Igor Santos",
+      "email": "igor.santos@example.com"
+    },
+    "date": "2025-08-20T19:50:00.000Z",
+    "totalAmount": 1299.99,
+    "status": "Completed",
+    "paymentMethod": "Boleto",
+    "items": [
+      {
+        "productId": "PROD001",
+        "productName": "Smartphone X Pro",
+        "category": "Electronics",
+        "quantity": 1,
+        "unitPrice": 1299.99,
+        "totalPrice": 1299.99
+      }
+    ]
+  },
+  {
+    "orderId": 1014,
+    "customer": {
+      "customerId": "CUST010",
+      "name": "Juliana Pereira",
+      "email": "juliana.pereira@example.com"
+    },
+    "date": "2025-08-15T10:00:00.000Z",
+    "totalAmount": 99.95,
+    "status": "Shipped",
+    "paymentMethod": "Pix",
+    "items": [
+      {
+        "productId": "PROD007",
+        "productName": "Camiseta Geek 'Code'",
+        "category": "Clothing",
+        "quantity": 1,
+        "unitPrice": 99.95,
+        "totalPrice": 99.95
+      }
+    ]
+  },
+  {
+    "orderId": 1015,
+    "customer": {
+      "customerId": "CUST002",
+      "name": "Bruno Costa",
+      "email": "bruno.costa@example.com"
+    },
+    "date": "2025-08-10T23:15:00.000Z",
+    "totalAmount": 259.90,
+    "status": "Completed",
+    "paymentMethod": "Credit Card",
+    "items": [
+      {
+        "productId": "PROD003",
+        "productName": "Teclado Mecânico RGB",
+        "category": "Peripherals",
+        "quantity": 1,
+        "unitPrice": 259.90,
+        "totalPrice": 259.90
+      }
+    ]
+  },
+  {
+    "orderId": 1016,
+    "customer": {
+      "customerId": "CUST011",
+      "name": "Larissa Oliveira",
+      "email": "larissa.oliveira@example.com"
+    },
+    "date": "2025-08-05T14:30:00.000Z",
+    "totalAmount": 5398.98,
+    "status": "Completed",
+    "paymentMethod": "PayPal",
+    "items": [
+      {
+        "productId": "PROD002",
+        "productName": "Notebook Pro Max",
+        "category": "Electronics",
+        "quantity": 1,
+        "unitPrice": 4598.99,
+        "totalPrice": 4598.99
+      },
+      {
+        "productId": "PROD006",
+        "productName": "Monitor Gamer 24\" 144Hz",
+        "category": "Peripherals",
+        "quantity": 1,
+        "unitPrice": 899.90,
+        "totalPrice": 899.90
+      }
+    ]
+  },
+  {
+    "orderId": 1017,
+    "customer": {
+      "customerId": "CUST004",
+      "name": "Daniel Martins",
+      "email": "daniel.martins@example.com"
+    },
+    "date": "2025-07-30T09:00:00.000Z",
+    "totalAmount": 79.90,
+    "status": "Completed",
+    "paymentMethod": "Pix",
+    "items": [
+      {
+        "productId": "PROD008",
+        "productName": "Caneca 'Hello World'",
+        "category": "Home",
+        "quantity": 1,
+        "unitPrice": 79.90,
+        "totalPrice": 79.90
+      }
+    ]
+  },
+  {
+    "orderId": 1018,
+    "customer": {
+      "customerId": "CUST001",
+      "name": "Ana Silva",
+      "email": "ana.silva@example.com"
+    },
+    "date": "2025-07-28T18:45:00.000Z",
+    "totalAmount": 219.80,
+    "status": "Completed",
+    "paymentMethod": "Credit Card",
+    "items": [
+      {
+        "productId": "PROD010",
+        "productName": "Livro: A Arte da Programação",
+        "category": "Books",
+        "quantity": 1,
+        "unitPrice": 89.90,
+        "totalPrice": 89.90
+      },
+      {
+        "productId": "PROD011",
+        "productName": "Livro: Clean Code",
+        "category": "Books",
+        "quantity": 1,
+        "unitPrice": 129.90,
+        "totalPrice": 129.90
+      }
+    ]
+  },
+  {
+    "orderId": 1019,
+    "customer": {
+      "customerId": "CUST012",
+      "name": "Marcos Andrade",
+      "email": "marcos.andrade@example.com"
+    },
+    "date": "2025-07-25T11:20:00.000Z",
+    "totalAmount": 179.99,
+    "status": "Cancelled",
+    "paymentMethod": "Boleto",
+    "items": [
+      {
+        "productId": "PROD009",
+        "productName": "Moletom com Capuz 'Developer'",
+        "category": "Clothing",
+        "quantity": 1,
+        "unitPrice": 179.99,
+        "totalPrice": 179.99
+      }
+    ]
+  },
+  {
+    "orderId": 1020,
+    "customer": {
+      "customerId": "CUST007",
+      "name": "Gabriel Rocha",
+      "email": "gabriel.rocha@example.com"
+    },
+    "date": "2025-07-20T15:00:00.000Z",
+    "totalAmount": 1349.98,
+    "status": "Completed",
+    "paymentMethod": "Credit Card",
+    "items": [
+      {
+        "productId": "PROD001",
+        "productName": "Smartphone X Pro",
+        "category": "Electronics",
+        "quantity": 1,
+        "unitPrice": 1299.99,
+        "totalPrice": 1299.99
+      },
+      {
+        "productId": "PROD005",
+        "productName": "Capa de Silicone para Smartphone",
+        "category": "Accessories",
+        "quantity": 1,
+        "unitPrice": 49.99,
+        "totalPrice": 49.99
+      }
+    ]
+  }
+]

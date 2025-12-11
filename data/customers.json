@@ -1,0 +1,218 @@
+[
+  {
+    "id": "CUST001",
+    "name": "Ana Silva",
+    "email": "ana.silva@example.com",
+    "phone": "(11) 98765-4321",
+    "dateJoined": "2025-01-20T00:00:00.000Z",
+    "lastSeen": "2025-09-30T15:00:00.000Z",
+    "location": {
+      "city": "São Paulo",
+      "state": "SP",
+      "country": "Brazil",
+      "lat": -23.5505,
+      "lon": -46.6333
+    },
+    "totalOrders": 4,
+    "totalSpent": 1899.58,
+    "avatarUrl": "https://ui-avatars.com/api/?name=Ana+Silva&background=random"
+  },
+  {
+    "id": "CUST002",
+    "name": "Bruno Costa",
+    "email": "bruno.costa@example.com",
+    "phone": "(21) 91234-5678",
+    "dateJoined": "2025-02-10T00:00:00.000Z",
+    "lastSeen": "2025-09-29T11:00:00.000Z",
+    "location": {
+      "city": "Rio de Janeiro",
+      "state": "RJ",
+      "country": "Brazil",
+      "lat": -22.9068,
+      "lon": -43.1729
+    },
+    "totalOrders": 3,
+    "totalSpent": 479.7,
+    "avatarUrl": "https://ui-avatars.com/api/?name=Bruno+Costa&background=random"
+  },
+  {
+    "id": "CUST003",
+    "name": "Carla Dias",
+    "email": "carla.dias@example.com",
+    "phone": "(31) 98888-7777",
+    "dateJoined": "2025-03-05T00:00:00.000Z",
+    "lastSeen": "2025-09-29T19:00:00.000Z",
+    "location": {
+      "city": "Belo Horizonte",
+      "state": "MG",
+      "country": "Brazil",
+      "lat": -19.9167,
+      "lon": -43.9345
+    },
+    "totalOrders": 2,
+    "totalSpent": 699.88,
+    "avatarUrl": "https://ui-avatars.com/api/?name=Carla+Dias&background=random"
+  },
+  {
+    "id": "CUST004",
+    "name": "Daniel Martins",
+    "email": "daniel.martins@example.com",
+    "phone": "(41) 97777-8888",
+    "dateJoined": "2025-04-15T00:00:00.000Z",
+    "lastSeen": "2025-09-27T22:30:00.000Z",
+    "location": {
+      "city": "Curitiba",
+      "state": "PR",
+      "country": "Brazil",
+      "lat": -25.4284,
+      "lon": -49.2733
+    },
+    "totalOrders": 2,
+    "totalSpent": 429.9,
+    "avatarUrl": "https://ui-avatars.com/api/?name=Daniel+Martins&background=random"
+  },
+  {
+    "id": "CUST005",
+    "name": "Eduarda Lima",
+    "email": "eduarda.lima@example.com",
+    "phone": "(51) 96666-5555",
+    "dateJoined": "2025-05-20T00:00:00.000Z",
+    "lastSeen": "2025-09-26T12:00:00.000Z",
+    "location": {
+      "city": "Porto Alegre",
+      "state": "RS",
+      "country": "Brazil",
+      "lat": -30.0346,
+      "lon": -51.2177
+    },
+    "totalOrders": 1,
+    "totalSpent": 4598.99,
+    "avatarUrl": "https://ui-avatars.com/api/?name=Eduarda+Lima&background=random"
+  },
+  {
+    "id": "CUST006",
+    "name": "Fernanda Souza",
+    "email": "fernanda.souza@example.com",
+    "phone": "(71) 95555-4444",
+    "dateJoined": "2025-06-01T00:00:00.000Z",
+    "lastSeen": "2025-09-24T18:00:00.000Z",
+    "location": {
+      "city": "Salvador",
+      "state": "BA",
+      "country": "Brazil",
+      "lat": -12.9777,
+      "lon": -38.5016
+    },
+    "totalOrders": 1,
+    "totalSpent": 79.9,
+    "avatarUrl": "https://ui-avatars.com/api/?name=Fernanda+Souza&background=random"
+  },
+  {
+    "id": "CUST007",
+    "name": "Gabriel Rocha",
+    "email": "gabriel.rocha@example.com",
+    "phone": "(81) 94444-3333",
+    "dateJoined": "2025-06-10T00:00:00.000Z",
+    "lastSeen": "2025-09-23T09:00:00.000Z",
+    "location": {
+      "city": "Recife",
+      "state": "PE",
+      "country": "Brazil",
+      "lat": -8.0476,
+      "lon": -34.8770
+    },
+    "totalOrders": 2,
+    "totalSpent": 2249.88,
+    "avatarUrl": "https://ui-avatars.com/api/?name=Gabriel+Rocha&background=random"
+  },
+  {
+    "id": "CUST008",
+    "name": "Helena Costa",
+    "email": "helena.costa@example.com",
+    "phone": "(85) 93333-2222",
+    "dateJoined": "2025-07-02T00:00:00.000Z",
+    "lastSeen": "2025-08-28T17:00:00.000Z",
+    "location": {
+      "city": "Fortaleza",
+      "state": "CE",
+      "country": "Brazil",
+      "lat": -3.7319,
+      "lon": -38.5267
+    },
+    "totalOrders": 1,
+    "totalSpent": 179.99,
+    "avatarUrl": "https://ui-avatars.com/api/?name=Helena+Costa&background=random"
+  },
+  {
+    "id": "CUST009",
+    "name": "Igor Santos",
+    "email": "igor.santos@example.com",
+    "phone": "(92) 92222-1111",
+    "dateJoined": "2025-07-15T00:00:00.000Z",
+    "lastSeen": "2025-08-20T20:00:00.000Z",
+    "location": {
+      "city": "Manaus",
+      "state": "AM",
+      "country": "Brazil",
+      "lat": -3.1190,
+      "lon": -60.0217
+    },
+    "totalOrders": 1,
+    "totalSpent": 1299.99,
+    "avatarUrl": "https://ui-avatars.com/api/?name=Igor+Santos&background=random"
+  },
+  {
+    "id": "CUST010",
+    "name": "Juliana Pereira",
+    "email": "juliana.pereira@example.com",
+    "phone": "(61) 91111-0000",
+    "dateJoined": "2025-08-01T00:00:00.000Z",
+    "lastSeen": "2025-08-15T11:00:00.000Z",
+    "location": {
+      "city": "Brasília",
+      "state": "DF",
+      "country": "Brazil",
+      "lat": -15.7942,
+      "lon": -47.8825
+    },
+    "totalOrders": 1,
+    "totalSpent": 99.95,
+    "avatarUrl": "https://ui-avatars.com/api/?name=Juliana+Pereira&background=random"
+  },
+  {
+    "id": "CUST011",
+    "name": "Larissa Oliveira",
+    "email": "larissa.oliveira@example.com",
+    "phone": "(19) 99999-1234",
+    "dateJoined": "2025-08-02T00:00:00.000Z",
+    "lastSeen": "2025-08-05T15:00:00.000Z",
+    "location": {
+      "city": "Campinas",
+      "state": "SP",
+      "country": "Brazil",
+      "lat": -22.9099,
+      "lon": -47.0626
+    },
+    "totalOrders": 1,
+    "totalSpent": 5498.89,
+    "avatarUrl": "https://ui-avatars.com/api/?name=Larissa+Oliveira&background=random"
+  },
+  {
+    "id": "CUST012",
+    "name": "Marcos Andrade",
+    "email": "marcos.andrade@example.com",
+    "phone": "(11) 98765-5678",
+    "dateJoined": "2025-07-24T00:00:00.000Z",
+    "lastSeen": "2025-07-25T12:00:00.000Z",
+    "location": {
+      "city": "São Paulo",
+      "state": "SP",
+      "country": "Brazil",
+      "lat": -23.5505,
+      "lon": -46.6333
+    },
+    "totalOrders": 1,
+    "totalSpent": 179.99,
+    "avatarUrl": "https://ui-avatars.com/api/?name=Marcos+Andrade&background=random"
+  }
+]

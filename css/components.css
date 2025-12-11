@@ -1,0 +1,319 @@
+/* ==========================================================================
+   1. COMPONENTES DA SIDEBAR
+   ========================================================================== */
+
+.sidebar {
+    background-color: var(--bg-sidebar);
+    color: var(--text-on-dark);
+    padding: calc(var(--spacing-unit) * 2.5);
+}
+
+.logo-link {
+    text-decoration: none;
+    color: var(--text-on-dark);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-unit);
+    margin-bottom: calc(var(--spacing-unit) * 4);
+}
+
+.logo-icon {
+    font-size: var(--fs-xl);
+    min-width: 3.5rem; /* Garante alinhamento mesmo quando colapsado */
+    text-align: center;
+}
+
+.logo-text {
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-bold);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-unit) calc(var(--spacing-unit) * 1.5);
+    margin-bottom: calc(var(--spacing-unit) * 0.5);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    color: var(--text-secondary);
+    transition: background-color var(--transition-speed-fast), color var(--transition-speed-fast);
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--text-on-dark);
+}
+
+.nav-link[aria-current="page"] {
+    background-color: var(--accent-primary);
+    color: var(--text-on-dark);
+    font-weight: var(--fw-bold);
+}
+
+.nav-icon {
+    font-size: var(--fs-lg);
+    width: 3.5rem;
+    text-align: center;
+    margin-right: var(--spacing-unit);
+}
+
+.nav-text {
+    white-space: nowrap;
+    overflow: hidden;
+    transition: opacity var(--transition-speed-fast) ease;
+}
+
+.sidebar-footer {
+    margin-top: auto; /* Empurra o footer para o final da sidebar */
+}
+
+/* Esconde o texto na sidebar colapsada */
+@media (max-width: 1024px) {
+    .logo-text,
+    .nav-text {
+        opacity: 0;
+        width: 0;
+        visibility: hidden;
+    }
+}
+
+
+/* ==========================================================================
+   2. COMPONENTES DO HEADER
+   ========================================================================== */
+
+.header {
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color var(--transition-speed-normal), border-color var(--transition-speed-normal);
+}
+
+.header-left, .header-right {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--spacing-unit) * 2);
+}
+
+/* Estilo base para botões de ícone no header */
+.sidebar-toggle, .theme-toggle {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: var(--fs-lg);
+    cursor: pointer;
+    padding: var(--spacing-unit);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color var(--transition-speed-fast);
+}
+
+.sidebar-toggle:hover, .theme-toggle:hover {
+    background-color: var(--bg-primary);
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-unit);
+    background-color: var(--bg-primary);
+    padding: var(--spacing-unit) calc(var(--spacing-unit) * 1.5);
+    border-radius: var(--border-radius);
+    min-width: 28rem;
+}
+
+.search-bar input {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    width: 100%;
+}
+.search-bar input:focus {
+    outline: none;
+}
+
+.user-menu-toggle {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-unit);
+    cursor: pointer;
+    padding: calc(var(--spacing-unit) / 2);
+    border-radius: var(--border-radius);
+}
+.user-menu-toggle:hover {
+    background-color: var(--bg-primary);
+}
+.user-avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.user-name {
+    font-weight: var(--fw-bold);
+    color: var(--text-primary);
+}
+
+@media (max-width: 1024px) {
+    .user-name { display: block; }
+    .search-form { display: block; }
+}
+
+@media (max-width: 768px) {
+    .user-name { display: none; }
+    .search-form { display: none; }
+}
+
+
+/* ==========================================================================
+   3. COMPONENTES DE ACESSIBILIDADE
+   ========================================================================== */
+
+.skip-link {
+    position: absolute;
+    top: -100px; /* Posiciona fora da tela */
+    left: 10px;
+    background: var(--accent-primary);
+    color: white;
+    padding: var(--spacing-unit);
+    z-index: 9999;
+    transition: top var(--transition-speed-normal) ease-in-out;
+}
+.skip-link:focus {
+    top: 10px; /* Traz para a tela quando focado */
+}
+
+
+/* ==========================================================================
+   4. COMPONENTES DINÂMICOS (PLACEHOLDERS PARA JS)
+   ========================================================================== */
+
+.loading-state {
+    color: var(--text-secondary);
+}
+
+/* Estilo para os cards de KPI que serão gerados */
+.card {
+    background-color: var(--bg-secondary);
+    padding: calc(var(--spacing-unit) * 2.5);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-base);
+}
+
+/* Estilo para as tabelas de dados que serão geradas */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--bg-secondary);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-base);
+    overflow: hidden; /* Garante que o border-radius seja aplicado nas bordas da tabela */
+}
+
+.data-table th,
+.data-table td {
+    padding: calc(var(--spacing-unit) * 1.5) calc(var(--spacing-unit) * 2);
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.data-table thead th {
+    font-size: var(--fs-sm);
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    background-color: var(--bg-primary);
+}
+
+.data-table tbody tr:hover {
+    background-color: var(--bg-primary);
+}
+
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--spacing-unit) * 2;
+    margin-bottom: calc(var(--spacing-unit) * 3);
+}
+
+.kpi-card {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--spacing-unit) * 2);
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: var(--fs-lg);
+}
+
+.card-content h3 {
+    font-size: var(--fs-sm);
+    color: var(--text-secondary);
+    margin-bottom: calc(var(--spacing-unit) / 2);
+}
+
+.card-content p {
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bold);
+    color: var(--text-primary);
+}
+
+.chart-wrapper {
+    position: relative;
+    height: 40vh; /* Define uma altura de 40% da altura da janela de visualização */
+    min-height: 300px; /* Garante uma altura mínima */
+}
+
+/* Em components.css (pode adicionar ao final) */
+
+/* Estilo para botões de ação dentro de tabelas */
+.action-btn {
+    background: none;
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    padding: calc(var(--spacing-unit) * 0.5) var(--spacing-unit);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all var(--transition-speed-fast);
+}
+
+.action-btn:hover {
+    background-color: var(--bg-primary);
+    color: var(--accent-primary);
+    border-color: var(--accent-primary);
+}
+
+/* Estilos para os badges de status */
+.status {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.status-completed { background-color: #c6f6d5; color: #22543d; }
+.status-shipped { background-color: #bee3f8; color: #2a4365; }
+.status-processing { background-color: #faf089; color: #744210; }
+.status-cancelled { background-color: #fed7d7; color: #822727; }
+
+[data-theme='dark'] .status-completed { background-color: #2f855a; color: #f0fff4; }
+[data-theme='dark'] .status-shipped { background-color: #4299e1; color: #e6fffa; }
+[data-theme='dark'] .status-processing { background-color: #d69e2e; color: #fffaf0; }
+[data-theme='dark'] .status-cancelled { background-color: #c53030; color: #fff5f5; }

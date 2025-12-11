@@ -1,0 +1,88 @@
+/* 1. ESTRUTURA DE ALTO NÍVEL (BODY E WRAPPERS)
+   ========================================================================== */
+body {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* O contêiner para todo o conteúdo à direita da sidebar */
+.main-wrapper {
+    flex-grow: 1; /* Ocupa todo o espaço horizontal disponível */
+    margin-left: var(--sidebar-width);
+    display: flex;
+    flex-direction: column;
+    transition: margin-left var(--transition-speed-normal) ease;
+}
+
+/* 2. ESTRUTURA DOS BLOCOS PRINCIPAIS (SIDEBAR, HEADER, CONTENT)
+   ========================================================================== */
+.sidebar {
+    width: var(--sidebar-width);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    transition: width var(--transition-speed-normal) ease, 
+                transform var(--transition-speed-normal) ease;
+}
+
+.header {
+    height: var(--header-height);
+    padding: 0 var(--padding-horizontal-header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 900;
+}
+
+.content {
+    flex-grow: 1; /* Ocupa todo o espaço vertical restante no main-wrapper */
+    padding: var(--padding-main-content);
+}
+
+/* 3. MEDIA QUERIES PARA AJUSTES ESTRUTURAIS
+   ========================================================================== */
+
+/* TABLET: Colapsa a sidebar */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: var(--sidebar-width-collapsed);
+    }
+
+    .main-wrapper {
+        margin-left: var(--sidebar-width-collapsed);
+    }
+}
+
+/* MOBILE: Transforma a sidebar em menu gaveta */
+@media (max-width: 768px) {
+    body {
+        /* Desfaz o 'display: flex' para o layout mobile */
+        display: block; 
+    }
+
+    .sidebar {
+        /* Esconde a sidebar fora da tela */
+        transform: translateX(-100%);
+    }
+
+    /* Classe de controle (via JS) para abrir a sidebar */
+    .sidebar.is-open {
+        transform: translateX(0);
+        width: var(--sidebar-width);
+    }
+
+    .main-wrapper {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .content {
+        padding: var(--padding-main-content-mobile);
+    }
+}
